@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="photo"
+            type="kz.flicktest.network.model.Photo"/>
+        <variable
+            name="picasso"
+            type="com.squareup.picasso.Picasso"
+            />
+        <variable
+            name="imageUrl"
+            type="String"
+            />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:picasso="@{imageUrl}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

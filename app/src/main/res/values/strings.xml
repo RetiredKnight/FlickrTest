@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FlickTest</string>
+    <string name="error">Connection error</string>
+</resources>
